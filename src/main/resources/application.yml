@@ -1,0 +1,9 @@
+server:
+  port: 8899
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5433/ot_validator
+    username: postgres
+    password: p123
+  jpa:
+    show-sql: true
