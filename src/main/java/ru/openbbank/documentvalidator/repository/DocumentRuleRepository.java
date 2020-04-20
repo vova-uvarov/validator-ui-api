@@ -1,4 +1,4 @@
-package ru.openbbank.documentvalidator.repository.repository;
+package ru.openbbank.documentvalidator.repository;
 
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;

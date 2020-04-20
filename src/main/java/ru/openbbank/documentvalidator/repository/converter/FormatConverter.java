@@ -1,4 +1,4 @@
-package ru.openbbank.documentvalidator.repository.repository.converter;
+package ru.openbbank.documentvalidator.repository.converter;
 
 
 import ru.openbbank.documentvalidator.repository.model.enums.Format;

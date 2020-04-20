@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import ru.openbank.validator.ui.model.FieldRuleFilter;
 import ru.openbank.validator.ui.model.FieldRuleInfo;
 import ru.openbank.validator.ui.model.RuleCheckInfo;
-import ru.openbbank.documentvalidator.repository.repository.FieldRuleRepository;
+import ru.openbbank.documentvalidator.repository.FieldRuleRepository;
 import ru.openbbank.documentvalidator.repository.model.RuleCheck;
 import ru.openbbank.documentvalidator.repository.model.enums.FieldRule;
 import ru.openbank.validator.ui.specification.FieldRuleSpecification;

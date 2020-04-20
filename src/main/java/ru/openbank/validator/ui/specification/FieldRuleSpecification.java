@@ -66,6 +66,7 @@ public class FieldRuleSpecification implements Specification<FieldRule> {
         if (!CollectionUtils.isEmpty(filter.getKeywords())){
             predicates.add(checksJoin.get("value").in(filter.getKeywords()));
         }
+        query.distinct(true);
 
         if (predicates.size() == 0) {
             return null;
