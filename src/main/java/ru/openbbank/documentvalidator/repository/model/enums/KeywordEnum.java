@@ -68,6 +68,8 @@ public enum KeywordEnum {
     EXPRESSION_2("expression2"),
     EXPRESSION_3("expression3"),
     FILE_EXTENSION("fileExtension"),
+    ARRAY_SIZE("arraySize"),
+    SUM_ARRAY_ELEMENTS_EQUAL("sumArrayElementsEqual"),
 
     MODE("mode"),
     ERROR_MESSAGE("errorMessage"),

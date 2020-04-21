@@ -67,6 +67,11 @@ public enum DocumentType {
      * Валютное платежное поручение
      */
     CURRENCY_PAYMENT("currencyPayments", MARKETPLACE),
+
+    /**
+     *
+     */
+    PAYMENT("payment", MARKETPLACE),
     /**
      * Покупка/продажа/конверсия валюты
      */
