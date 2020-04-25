@@ -2,7 +2,7 @@ server:
   port: 8899
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5433/ot_validator
+    url: jdbc:postgresql://127.0.0.1:5432/otk_validator
     username: postgres
     password: p123
   jpa:
@@ -11,19 +11,19 @@ app:
   dictionary:
     document:
       types:
-        CONTRACT_INFO: Сведения по контракту,
-        CREDIT_INFO: Сведения по кредитному договору,
-        OPERATION_INFO: Сведения об операциях,
-        CONFIRMING_DOCUMENT_INFO: Справка о подтверждающих документах,
-        MODIFY_INFO: Внесение изменений в раздел 1 ВБК,
-        CLOSE_DOCUMENT_INFO: Завление о снятии с учета контракта,
-        OUTGOING_EMAIL: Исходящие письма,
-        OVERNIGHT_DEPOSIT: Заявки на депозит,
-        VIRTUAL_OVERNIGHT_DEPOSIT: Заявки на виртуальный депозит,
-        VIRTUAL_OVERNIGHT_DEPOSIT_MODIFY: Отключение/подключение виртуального депозита,
-        CANCELLATION_REQUEST: Запрос на отзыв документа,
-        CURRENCY_TRANSFER_ORDER: РСТС,
-        CURRENCY_TRANSFER_ORDER_PATTERN: Шаблон РСТС,
-        CURRENCY_PAYMENT: Валютное платежное поручение,
-        PAYMENT: Платежное поручение,
-        CONVERSION_DOCUMENT: Покупка/продажа/конверсия валюты,
+        CONTRACT_INFO: Сведения по контракту
+        CREDIT_INFO: Сведения по кредитному договору
+        OPERATION_INFO: Сведения об операциях
+        CONFIRMING_DOCUMENT_INFO: Справка о подтверждающих документах
+        MODIFY_INFO: Внесение изменений в раздел 1 ВБК
+        CLOSE_DOCUMENT_INFO: Завление о снятии с учета контракта
+        OUTGOING_EMAIL: Исходящие письма
+        OVERNIGHT_DEPOSIT: Заявки на депозит
+        VIRTUAL_OVERNIGHT_DEPOSIT: Заявки на виртуальный депозит
+        VIRTUAL_OVERNIGHT_DEPOSIT_MODIFY: Отключение/подключение виртуального депозита
+        CANCELLATION_REQUEST: Запрос на отзыв документа
+        CURRENCY_TRANSFER_ORDER: РСТС
+        CURRENCY_TRANSFER_ORDER_PATTERN: Шаблон РСТС
+        CURRENCY_PAYMENT: Валютное платежное поручение
+        PAYMENT: Платежное поручение
+        CONVERSION_DOCUMENT: Покупка/продажа/конверсия валюты
