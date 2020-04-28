@@ -6,7 +6,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.util.CollectionUtils;
 import ru.openbank.validator.ui.model.FieldRuleFilter;
-import ru.openbank.validator.ui.model.SearchMode;
 import ru.openbbank.documentvalidator.repository.model.DocumentRule;
 import ru.openbbank.documentvalidator.repository.model.RuleCheck;
 import ru.openbbank.documentvalidator.repository.model.enums.FieldRule;
@@ -34,15 +33,10 @@ public class FieldRuleSpecification implements Specification<FieldRule> {
         List<Predicate> predicates = new ArrayList<>();
         Consumer<Predicate> add = predicates::add;
         helper.like("description", filter.getDescription()).ifPresent(add);
-        helper.like("groupName", filter.getGroupName()).ifPresent(add);
-        helper.like("name", filter.getName()).ifPresent(add);
+        helper.in("groupName", filter.getGroupNames()).ifPresent(add);
+        helper.in("name", filter.getNames()).ifPresent(add);
 
-        String fieldName = filter.getFieldName();
-        if (filter.getFiledRuleSearchMode() == SearchMode.EQUALS) {
-            helper.eq("fieldName", fieldName);
-        } else {
-            helper.like("fieldName", fieldName).ifPresent(add);
-        }
+        helper.in("fieldName",filter.getFieldNames()).ifPresent(add);
 
         if (!CollectionUtils.isEmpty(filter.getDocumentTypes())) {
             Subquery<DocumentRule> documentRuleSubquery = query.subquery(DocumentRule.class);

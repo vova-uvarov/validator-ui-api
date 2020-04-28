@@ -14,13 +14,12 @@ import java.util.Set;
 public class FieldRuleFilter {
     private Set<DocumentType> documentTypes;
     private Set<SchemaType> schemaTypes;
-    private String name;
+    private Set<String> names;
     private Set<Format> formats;
-    private String fieldName;
-    private SearchMode filedRuleSearchMode;
+    private Set<String> fieldNames;
     private ValidationMode validationMode;
     private Set<RuleSideEnum> ruleSides;
-    private String groupName;
+    private Set<String> groupNames;
     private Boolean enabled;
     private String description;
 
