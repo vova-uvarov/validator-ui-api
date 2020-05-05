@@ -15,6 +15,7 @@ import ru.openbbank.documentvalidator.repository.model.enums.FieldRule;
 import ru.openbank.validator.ui.specification.FieldRuleSpecification;
 
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -41,6 +42,7 @@ public class FieldRuleService  implements IFieldRuleService{
                 .description(f.getDescription())
                 .ruleChecks(f.getChecks().stream()
                         .map(this::map)
+                        .sorted(Comparator.comparing(RuleCheckInfo::getId))
                         .collect(Collectors.toList())
                 )
                 .build());
