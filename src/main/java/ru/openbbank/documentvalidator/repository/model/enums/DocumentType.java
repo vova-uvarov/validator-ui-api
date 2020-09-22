@@ -13,6 +13,8 @@ public enum DocumentType {
      * Сведения по контракту (181-И)
      */
     CONTRACT_INFO("vkinformCon181i", NEOMAS),
+
+    CONTRACT_INFO_MARKETPLACE("vkinformCon181i", MARKETPLACE),
     /**
      * Сведения по кредитному договору (181-И)
      */
@@ -75,7 +77,16 @@ public enum DocumentType {
     /**
      * Покупка/продажа/конверсия валюты
      */
-    CONVERSION_DOCUMENT("conversionDocument", MARKETPLACE);
+    CONVERSION_DOCUMENT("conversionDocument", MARKETPLACE),
+    /**
+     * Зарплатная ведомость
+     */
+    PAYROLL("payrolls", MARKETPLACE),
+
+    /**
+     * Заявка НСО
+     */
+    NSO_APPLICATION("nsoApplications", MARKETPLACE);
 
     @Getter
     private String path;
